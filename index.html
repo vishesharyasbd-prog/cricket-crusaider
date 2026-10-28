@@ -4,8 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080b18">
-<meta name="description" content="Join The Cricket Crusaders on Telegram for the latest cricket updates and announcements.">
+<meta name="description" content="Join The Cricket Crusaders on Telegram for cricket updates and announcements.">
 <title>The Cricket Crusaders | Official Telegram Community</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','2227360471995609');
+fbq('track','PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2227360471995609&ev=PageView&noscript=1"
+alt="">
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 :root{
@@ -14,15 +39,8 @@
   --purple:#a18aff;
   --white:#f7f8ff;
 }
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-
 body{
   min-height:100vh;
   display:flex;
@@ -37,269 +55,137 @@ body{
     radial-gradient(ellipse at 95% 85%,#421750 0,transparent 40%),
     #080b18;
 }
-
 .glow{
   position:fixed;
-  width:250px;
-  height:250px;
+  width:250px;height:250px;
   border-radius:50%;
   filter:blur(95px);
   opacity:.27;
   pointer-events:none;
   animation:float 8s ease-in-out infinite alternate;
 }
-
-.glow-one{
-  background:#326bff;
-  top:-60px;
-  left:-100px;
-}
-
+.glow-one{background:#326bff;top:-60px;left:-100px}
 .glow-two{
-  background:#a33cff;
-  right:-100px;
-  bottom:-40px;
+  background:#a33cff;right:-100px;bottom:-40px;
   animation-delay:-3s;
 }
-
 @keyframes float{
   from{transform:translateY(-12px)}
   to{transform:translateY(35px)}
 }
-
 .page{
-  position:relative;
-  z-index:1;
-  width:100%;
-  max-width:440px;
+  position:relative;z-index:1;
+  width:100%;max-width:440px;
   animation:appear .8s ease both;
 }
-
 @keyframes appear{
   from{opacity:0;transform:translateY(22px)}
   to{opacity:1;transform:translateY(0)}
 }
-
 .topbar{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  margin-bottom:24px;
-  font-size:10px;
-  letter-spacing:2.7px;
-  color:#c5d2f3;
-  text-align:center;
+  display:flex;align-items:center;justify-content:center;
+  gap:10px;margin-bottom:24px;
+  font-size:10px;letter-spacing:2.2px;
+  color:#c5d2f3;text-align:center;
 }
-
 .status-dot{
-  width:7px;
-  height:7px;
-  flex-shrink:0;
-  border-radius:50%;
-  background:var(--cyan);
+  width:7px;height:7px;flex-shrink:0;
+  border-radius:50%;background:var(--cyan);
   box-shadow:0 0 13px var(--cyan);
 }
-
 .card{
-  position:relative;
-  overflow:hidden;
-  padding:36px 24px 27px;
-  text-align:center;
+  position:relative;overflow:hidden;
+  padding:36px 24px 27px;text-align:center;
   border:1px solid rgba(255,255,255,.15);
   border-radius:29px;
-  background:linear-gradient(
-    145deg,
-    rgba(255,255,255,.11),
-    rgba(255,255,255,.025)
-  );
-  box-shadow:
-    0 25px 80px rgba(0,0,0,.38),
+  background:linear-gradient(145deg,
+    rgba(255,255,255,.11),rgba(255,255,255,.025));
+  box-shadow:0 25px 80px rgba(0,0,0,.38),
     inset 0 1px 0 rgba(255,255,255,.08);
   backdrop-filter:blur(22px);
   -webkit-backdrop-filter:blur(22px);
 }
-
 .card:before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:15%;
-  width:70%;
-  height:1px;
-  background:linear-gradient(
-    90deg,transparent,var(--cyan),transparent
-  );
+  content:"";position:absolute;top:0;left:15%;
+  width:70%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--cyan),transparent);
   box-shadow:0 0 15px var(--cyan);
 }
-
 .logo{
-  position:relative;
-  width:100px;
-  height:100px;
-  display:grid;
-  place-items:center;
-  margin:0 auto 26px;
-  border-radius:29px;
+  position:relative;width:100px;height:100px;
+  display:grid;place-items:center;
+  margin:0 auto 26px;border-radius:29px;
   border:1px solid rgba(255,255,255,.3);
-  background:linear-gradient(
-    145deg,#54edff 0%,#5574ff 55%,#b16aff 100%
-  );
+  background:linear-gradient(145deg,#54edff 0%,#5574ff 55%,#b16aff 100%);
   box-shadow:0 0 38px rgba(84,186,255,.32);
   transform:rotate(-4deg);
 }
-
-.logo svg{
-  width:57px;
-  height:57px;
-}
-
+.logo svg{width:57px;height:57px}
 h1{
   font-size:clamp(29px,7.8vw,37px);
-  line-height:1.18;
-  font-weight:900;
-  letter-spacing:-1.1px;
-  overflow-wrap:anywhere;
+  line-height:1.18;font-weight:900;
+  letter-spacing:-1.1px;overflow-wrap:anywhere;
 }
-
 .gradient{
-  background:linear-gradient(
-    90deg,#67efff 0%,#a7a1ff 52%,#e2a4ff 100%
-  );
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
+  background:linear-gradient(90deg,#67efff 0%,#a7a1ff 52%,#e2a4ff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-
 .channel-label{
-  margin-top:13px;
-  color:#d5ddf5;
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
+  margin-top:13px;color:#d5ddf5;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+[28-10-2026 20:02] X Man: }
 .subtitle{
-  max-width:320px;
-  margin:18px auto 26px;
-  color:#b7c3df;
-  font-size:14px;
-  line-height:1.8;
+  max-width:320px;margin:18px auto 26px;
+  color:#b7c3df;font-size:14px;line-height:1.8;
 }
-
 .divider{
-  height:1px;
-  margin:0 0 22px;
-  background:linear-gradient(
-    90deg,transparent,rgba(255,255,255,.17),transparent
-  );
+  height:1px;margin:0 0 22px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.17),transparent);
 }
-
 .features{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:9px;
-  margin-bottom:27px;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;margin-bottom:27px;
 }
-
 .feature{
   padding:14px 3px 13px;
   border:1px solid rgba(255,255,255,.09);
-  border-radius:15px;
-  background:rgba(255,255,255,.035);
+  border-radius:15px;background:rgba(255,255,255,.035);
 }
-
-.feature-icon{
-  display:block;
-  margin-bottom:9px;
-  font-size:22px;
-}
-
-.feature-text{
-  display:block;
-  color:#d0d8ed;
-  font-size:10px;
-  line-height:1.5;
-}
- .join-button{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:11px;
-  width:100%;
-  min-height:60px;
-  padding:16px 12px;
+.feature-icon{display:block;margin-bottom:9px;font-size:22px}
+.feature-text{display:block;color:#d0d8ed;font-size:10px;line-height:1.5}
+.join-button{
+  display:flex;align-items:center;justify-content:center;
+  gap:11px;width:100%;min-height:60px;padding:16px 12px;
   border:1px solid rgba(255,255,255,.32);
-  border-radius:16px;
-  color:#07101d;
-  background:linear-gradient(
-    100deg,#54edff 0%,#83b8ff 55%,#b6a0ff 100%
-  );
+  border-radius:16px;color:#07101d;
+  background:linear-gradient(100deg,#54edff 0%,#83b8ff 55%,#b6a0ff 100%);
   box-shadow:0 8px 28px rgba(74,194,255,.25);
-  text-decoration:none;
-  font-size:14px;
-  font-weight:900;
-  letter-spacing:.45px;
-  transition:transform .25s,box-shadow .25s;
+  text-decoration:none;font-size:14px;font-weight:900;
+  letter-spacing:.45px;transition:transform .25s,box-shadow .25s;
   animation:pulse 2.8s ease-in-out infinite;
 }
-
-.join-button svg{
-  width:24px;
-  height:24px;
-  flex-shrink:0;
-}
-
+.join-button svg{width:24px;height:24px;flex-shrink:0}
 .join-button:hover{
   transform:translateY(-3px);
   box-shadow:0 12px 38px rgba(74,194,255,.48);
 }
-
-.join-button:active{
-  transform:scale(.98);
-}
-
-.join-button:focus-visible{
-  outline:3px solid #fff;
-  outline-offset:4px;
-}
-
+.join-button:active{transform:scale(.98)}
+.join-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
 @keyframes pulse{
   0%,100%{box-shadow:0 8px 28px rgba(74,194,255,.22)}
   50%{box-shadow:0 8px 36px rgba(74,194,255,.43)}
 }
-
 .note{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
-  margin-top:18px;
-  color:#aebbd5;
-  font-size:11px;
-  line-height:1.6;
+  display:flex;align-items:center;justify-content:center;
+  gap:7px;margin-top:18px;color:#aebbd5;
+  font-size:11px;line-height:1.6;
 }
-
-.note svg{
-  width:15px;
-  height:15px;
-  flex-shrink:0;
-  color:#7eeac6;
-}
-
+.note svg{width:15px;height:15px;flex-shrink:0;color:#7eeac6}
 .footer{
-  margin-top:23px;
-  color:#8793b1;
-  text-align:center;
-  font-size:10px;
-  line-height:1.9;
-  letter-spacing:1px;
+  margin-top:23px;color:#8793b1;text-align:center;
+  font-size:10px;line-height:1.9;letter-spacing:1px;
 }
-
-.footer span{
-  color:#b6c7ed;
-}
-
+.footer span{color:#b6c7ed}
 @media(max-width:360px){
   .card{padding:29px 16px 23px}
   .logo{width:86px;height:86px;border-radius:25px}
@@ -308,11 +194,9 @@ h1{
   .feature-text{font-size:9px}
   .join-button{font-size:12px}
 }
-
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{
-    animation:none!important;
-    scroll-behavior:auto!important;
+    animation:none!important;scroll-behavior:auto!important;
     transition:none!important;
   }
 }
@@ -320,19 +204,16 @@ h1{
 </head>
 
 <body>
-
 <div class="glow glow-one"></div>
 <div class="glow glow-two"></div>
 
 <main class="page">
-
   <div class="topbar">
     <span class="status-dot"></span>
     THE CRICKET CRUSADERS COMMUNITY
   </div>
 
   <section class="card">
-
     <div class="logo" aria-label="Telegram icon">
       <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
         <path d="M21.9 3.4 18.6 20c-.25 1.17-.92 1.46-1.87.91l-5.16-3.8-2.49 2.4c-.28.29-.51.52-1.04.52l.37-5.25 9.55-8.63c.42-.37-.09-.58-.65-.21L5.5 13.37.4 11.77c-1.11-.35-1.13-1.11.23-1.64L20.55 2.5c.92-.34 1.72.22 1.35.9Z"/>
@@ -353,28 +234,25 @@ h1{
     <div class="divider"></div>
 
     <div class="features">
-
       <div class="feature">
         <span class="feature-icon">🏏</span>
         <span class="feature-text">Cricket<br>Updates</span>
       </div>
-
       <div class="feature">
         <span class="feature-icon">⚡️</span>
         <span class="feature-text">Latest<br>Announcements</span>
       </div>
-
       <div class="feature">
         <span class="feature-icon">💎</span>
         <span class="feature-text">Community<br>Access</span>
       </div>
-
     </div>
 
     <a
       class="join-button"
+      id="telegramJoinButton"
       href="https://t.me/+JYNE1EZKzNEwMDk1"
-      target="_blank"
+ target="_blank"
       rel="noopener noreferrer"
       aria-label="Join The Cricket Crusaders on Telegram"
     >
@@ -391,14 +269,27 @@ h1{
       </svg>
       Tap to open our Telegram channel
     </div>
-
   </section>
-<footer class="footer">
+
+  <footer class="footer">
     <span>THE CRICKET CRUSADERS</span><br>
     YOUR CRICKET COMMUNITY
   </footer>
-
 </main>
+
+<script>
+(function () {
+  var joinButton = document.getElementById('telegramJoinButton');
+
+  if (!joinButton) return;
+
+  joinButton.addEventListener('click', function () {
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Subscribe');
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
